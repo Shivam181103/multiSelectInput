@@ -1,0 +1,73 @@
+/* MultiInput.css */
+.chip-input {
+  display: flex;
+  flex-direction: column; 
+  max-width:600px;  
+  overflow:none;
+}
+ 
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+} 
+.chip {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chip-remove {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.item-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.item-list li:hover {
+  background-color: #f2f2f2;
+}
+.selected-chips{
+  display:flex;
+  gap:10px;
+  margin:10px 0;
+  width:auto;
+  flex-wrap:nowrap;
+  overflow-x:auto;
+}
+.selected-chips::-webkit-scrollbar{
+  height:3px;
+}
+.selected-chips >div{
+  min-width:max-content;
+  background:lightblue;
+  padding:5px 10px;
+  border-radius:10px;
+}
+.chip-input input{
+  border:none;
+  width:max-content; 
+  border-bottom:1px solid lightgray;
+}
+.chip-input input:focus-visible{
+   outline:none;
+}
+.custom-chip{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:10px;
+}
